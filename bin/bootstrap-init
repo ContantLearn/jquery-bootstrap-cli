@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+"use strict";
+
+process.env.NODE_PATH = __dirname + "/../node_modules/";
+
+const
+    program = require("commander"),
+    init = require("../lib/init")
+;
+
+program
+    .usage("<project-name>")
+    .option('-l,--local <localtion>', 'Get Template From Localtion');
+
+program.parse(process.argv);
+
+// 如果命令参数输入有误,显示帮助信息
+if(!program.args.length){
+  program.help();
+}
+
+init(program.local, program.args[0]);
+
+

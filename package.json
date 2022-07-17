@@ -1,0 +1,32 @@
+{
+  "name": "jquery-bootstrap-cli",
+  "version": "1.0.1",
+  "description": "bootstrap3 cli project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "bootstrap3",
+    "cli"
+  ],
+  "author": "hjj",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^5.2.0",
+    "metalsmith": "^2.3.0",
+    "ora": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "user-home": "^2.0.0"
+  },
+  "bin": {
+    "bootstrap": "bin/bootstrap",
+    "bootstrap-init": "bin/bootstrap-init"
+  }
+}
